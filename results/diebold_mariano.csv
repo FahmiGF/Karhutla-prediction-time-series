@@ -1,0 +1,10 @@
+model,reference,dm_stat,p_value,n,lebih_baik
+Seasonal Naive (lag-7),Persistence,0.575,0.5656,10960,False
+"SARIMAX(1,0,1)(1,0,0,7)",Persistence,-4.647,0.0,10960,True
+HistGB (tabular),Persistence,-4.805,0.0,10960,True
+LSTM,Persistence,-4.912,0.0,10960,True
+GRU,Persistence,-4.983,0.0,10960,True
+CNN-LSTM,Persistence,-4.827,0.0,10960,True
+LSTM,HistGB (tabular),-2.718,0.0066,10960,True
+GRU,HistGB (tabular),-2.711,0.0067,10960,True
+CNN-LSTM,HistGB (tabular),-1.705,0.0882,10960,False

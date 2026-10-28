@@ -1,0 +1,25 @@
+{
+  "n_rows": 40180,
+  "n_provinces": 10,
+  "period": [
+    "2015-01-01",
+    "2025-12-31"
+  ],
+  "seed": 42,
+  "yearly_hotspot_totals": {
+    "2015": 186917,
+    "2016": 21347,
+    "2017": 12312,
+    "2018": 33240,
+    "2019": 37822,
+    "2020": 3996,
+    "2021": 3959,
+    "2022": 3842,
+    "2023": 128305,
+    "2024": 9680,
+    "2025": 8051
+  },
+  "share_zero_days_pct": 59.51,
+  "mean_hotspot_per_day": 11.186,
+  "note": "data simulasi fisik-meteorologis; bukan observasi"
+}

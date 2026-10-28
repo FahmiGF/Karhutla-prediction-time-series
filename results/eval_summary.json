@@ -1,0 +1,169 @@
+{
+  "test_period": [
+    "2022-12-25",
+    "2025-12-24"
+  ],
+  "n_test_obs": 10960,
+  "best_model": "GRU",
+  "best_MAE": 10.015,
+  "persistence_MAE": 13.543,
+  "mae_reduction_pct": 26.05,
+  "metrics": {
+    "Persistence": {
+      "MAE": 13.543,
+      "RMSE": 53.857,
+      "R2": -0.0804,
+      "sMAPE_pct": 142.19,
+      "F1_event": 0.7113,
+      "precision_event": 0.7107,
+      "recall_event": 0.7118,
+      "n_obs": 10960
+    },
+    "Seasonal Naive (lag-7)": {
+      "MAE": 14.518,
+      "RMSE": 55.598,
+      "R2": -0.1514,
+      "sMAPE_pct": 144.78,
+      "F1_event": 0.6808,
+      "precision_event": 0.6803,
+      "recall_event": 0.6814,
+      "n_obs": 10960
+    },
+    "SARIMAX(1,0,1)(1,0,0,7)": {
+      "MAE": 10.14,
+      "RMSE": 43.665,
+      "R2": 0.2898,
+      "sMAPE_pct": 148.31,
+      "F1_event": 0.7559,
+      "precision_event": 0.7973,
+      "recall_event": 0.7186,
+      "n_obs": 10960
+    },
+    "HistGB (tabular)": {
+      "MAE": 10.126,
+      "RMSE": 43.016,
+      "R2": 0.3108,
+      "sMAPE_pct": 151.04,
+      "F1_event": 0.7623,
+      "precision_event": 0.8157,
+      "recall_event": 0.7155,
+      "n_obs": 10960
+    },
+    "LSTM": {
+      "MAE": 10.47,
+      "RMSE": 41.32,
+      "R2": 0.364,
+      "sMAPE_pct": 154.99,
+      "F1_event": 0.7782,
+      "precision_event": 0.7683,
+      "recall_event": 0.7885,
+      "n_obs": 10960
+    },
+    "GRU": {
+      "MAE": 10.015,
+      "RMSE": 42.129,
+      "R2": 0.3389,
+      "sMAPE_pct": 154.71,
+      "F1_event": 0.7726,
+      "precision_event": 0.8092,
+      "recall_event": 0.7391,
+      "n_obs": 10960
+    },
+    "CNN-LSTM": {
+      "MAE": 10.541,
+      "RMSE": 41.946,
+      "R2": 0.3446,
+      "sMAPE_pct": 149.83,
+      "F1_event": 0.7833,
+      "precision_event": 0.7589,
+      "recall_event": 0.8094,
+      "n_obs": 10960
+    }
+  },
+  "dm": [
+    {
+      "model": "Seasonal Naive (lag-7)",
+      "reference": "Persistence",
+      "dm_stat": 0.575,
+      "p_value": 0.5656,
+      "n": 10960,
+      "lebih_baik": false
+    },
+    {
+      "model": "SARIMAX(1,0,1)(1,0,0,7)",
+      "reference": "Persistence",
+      "dm_stat": -4.647,
+      "p_value": 0.0,
+      "n": 10960,
+      "lebih_baik": true
+    },
+    {
+      "model": "HistGB (tabular)",
+      "reference": "Persistence",
+      "dm_stat": -4.805,
+      "p_value": 0.0,
+      "n": 10960,
+      "lebih_baik": true
+    },
+    {
+      "model": "LSTM",
+      "reference": "Persistence",
+      "dm_stat": -4.912,
+      "p_value": 0.0,
+      "n": 10960,
+      "lebih_baik": true
+    },
+    {
+      "model": "GRU",
+      "reference": "Persistence",
+      "dm_stat": -4.983,
+      "p_value": 0.0,
+      "n": 10960,
+      "lebih_baik": true
+    },
+    {
+      "model": "CNN-LSTM",
+      "reference": "Persistence",
+      "dm_stat": -4.827,
+      "p_value": 0.0,
+      "n": 10960,
+      "lebih_baik": true
+    },
+    {
+      "model": "LSTM",
+      "reference": "HistGB (tabular)",
+      "dm_stat": -2.718,
+      "p_value": 0.0066,
+      "n": 10960,
+      "lebih_baik": true
+    },
+    {
+      "model": "GRU",
+      "reference": "HistGB (tabular)",
+      "dm_stat": -2.711,
+      "p_value": 0.0067,
+      "n": 10960,
+      "lebih_baik": true
+    },
+    {
+      "model": "CNN-LSTM",
+      "reference": "HistGB (tabular)",
+      "dm_stat": -1.705,
+      "p_value": 0.0882,
+      "n": 10960,
+      "lebih_baik": false
+    }
+  ],
+  "event_threshold": 10,
+  "figures": [
+    "fig01_series.png",
+    "fig02_climatology.png",
+    "fig03_drivers.png",
+    "fig04_curves.png",
+    "fig05_prediction.png",
+    "fig06_metrics.png",
+    "fig07_horizon.png",
+    "fig08_scatter.png",
+    "fig09_province.png"
+  ]
+}

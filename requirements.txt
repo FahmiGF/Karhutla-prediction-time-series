@@ -1,0 +1,8 @@
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+scikit-learn>=1.4
+statsmodels>=0.14
+torch>=2.4          # CPU: pip install torch --index-url https://download.pytorch.org/whl/cpu
+python-pptx>=0.6.23
+Pillow>=10

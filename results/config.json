@@ -1,0 +1,15 @@
+{
+  "window": 14,
+  "horizons": [
+    1,
+    3,
+    7
+  ],
+  "batch_size": 256,
+  "epochs": 60,
+  "patience": 8,
+  "lr": 0.002,
+  "hidden": 64,
+  "dropout": 0.2,
+  "seed": 42
+}
